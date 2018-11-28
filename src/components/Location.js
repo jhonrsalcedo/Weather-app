@@ -1,4 +1,8 @@
 import React from 'react';
+const obj ={ name1: "Emanuel", name2: "Jose"} 
+//const {name1: myName1, name2: myName2} = obj; Destructuracion
+const {name1,name2} = obj; // forma mas simplificada
+console.log(name1, name2);
 
 /* se utiliza un parametro props, ademas se utiliza los {} para mas instrucciones 
 pero se utiliza de esa manera para asegurar que todo salga bien ya sea con una sola linea de codigo
