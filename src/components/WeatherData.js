@@ -9,11 +9,12 @@ import {
     SNOW,
     WINDY, 
 } from './../constants/weathers';
+
 const WeatherData = () => (
     <div>
         <WeatherTemperature 
             temperature={` ${20}`}
-            weatherState={"rain"}
+            weatherState={ClOUDY}
         />
         <WeatherExtraInfo
             humidity={80} wind={"10 m/s"}
