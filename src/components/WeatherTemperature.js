@@ -1,12 +1,25 @@
 import React from "react";
 import WeatherIcons from 'react-weathericons';
+import {
+    CLOUD, 
+    CLOUDY,
+    SUN, 
+    RAIN,
+    SNOW,
+    WINDY, 
+} from './../constants/weathers';
 
 const icons = {
-    sunny: "day-sunny",
-    fog: "day-fog",
-}
+    [CLOUD]: "cloud",
+    [CLOUDY]: "cloudy",
+    [SUN]: "day-sunny",
+    [RAIN]: "rain",
+    [SNOW]: "snow",
+    [WINDY]: "windy"
+};
 const getWeatherIcon = weatherState =>{
     const icon = icons[weatherState];
+    
     if(icon)
         return <WeatherIcons name={icon} size="2x" />
     else
