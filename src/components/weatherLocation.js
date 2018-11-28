@@ -4,7 +4,7 @@ import WeatherData from './WeatherData';
 const WeatherLocation = () =>(
     /* se le asigna un parametro a la etiqueta Location*/
     <div>
-        <Location city={"Cartagena de Indias"}></Location>
+        <Location city={"Cartagena de Indias - Colombia"}></Location>
         <WeatherData></WeatherData>
     </div>
 );
