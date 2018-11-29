@@ -3,19 +3,14 @@ import WeatherTemperature from './WeatherTemperature';
 import WeatherExtraInfo from './WeatherExtraInfo';
 //Validacion de constantes
 import {
-    CLOUD, 
-    CLOUDY,
-    SUN, 
-    RAIN,
-    SNOW,
-    WINDY, 
+    SUN,
 } from './../../../constants/weathers';
 
 const WeatherData = () => (
     <div>
         <WeatherTemperature 
-            temperature={` ${20}`}
-            weatherState={CLOUDY}
+            temperature={` ${36}`}
+            weatherState={SUN}
         />
         <WeatherExtraInfo
             humidity={80} wind={"10 m/s"}

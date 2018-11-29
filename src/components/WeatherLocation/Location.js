@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 const obj ={ name1: "Emanuel", name2: "Jose"} 
 //const {name1: myName1, name2: myName2} = obj; Destructuracion
 const {name1,name2} = obj; // forma mas simplificada
@@ -20,8 +20,5 @@ const Location = ({city}) =>(
 //const {city} = props; Destructuring
 //const city = props.city; - forma normal 
 //se puede simplificar aun mas desde const Location = ({city}) directamente y se elimina la linea const {city} = props; y se vuelve a utilizar las () en este caso, en caso contrario se utiliza las {}
-    
-Location.PropTypes = {
-    city: PropTypes.string.isRequired,
-};
+
 export default Location;
