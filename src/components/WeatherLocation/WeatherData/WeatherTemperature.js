@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 import React from "react";
 import WeatherIcons from 'react-weathericons';
 import PropTypes from 'prop-types';
@@ -8,7 +9,7 @@ import {
     RAIN,
     SNOW,
     WINDY, 
-} from './../constants/weathers';
+} from './../../../constants/weathers';
 
 const icons = {
     [CLOUD]: "cloud",
@@ -22,7 +23,7 @@ const getWeatherIcon = weatherState =>{
     const icon = icons[weatherState];
     
     if(icon)
-        return <WeatherIcons name={icon} size="2x" />
+        return <WeatherIcons name={icon} size="2x"/>
     else
         return <WeatherIcons name={"day-sunny"} size="2x" />   
 }
