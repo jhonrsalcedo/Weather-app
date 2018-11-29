@@ -1,6 +1,7 @@
 import React from 'react';
 import WeatherTemperature from './WeatherTemperature';
 import WeatherExtraInfo from './WeatherExtraInfo';
+//Validacion de constantes
 import {
     CLOUD, 
     CLOUDY,
@@ -14,7 +15,7 @@ const WeatherData = () => (
     <div>
         <WeatherTemperature 
             temperature={` ${20}`}
-            weatherState={ClOUDY}
+            weatherState={CLOUDY}
         />
         <WeatherExtraInfo
             humidity={80} wind={"10 m/s"}
