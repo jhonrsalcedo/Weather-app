@@ -5,9 +5,10 @@ import WeatherExtraInfo from './WeatherExtraInfo';
 import {
     SUN,
 } from './../../../constants/weathers';
+import './style.css'
 
 const WeatherData = () => (
-    <div>
+    <div >
         <WeatherTemperature 
             temperature={` ${36}`}
             weatherState={SUN}

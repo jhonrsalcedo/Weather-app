@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const WeatherExtraInfo = ({humidity, wind}) => (
-    <div>
+    <div className="weatherDataCont">
         <span>{`${humidity} % - `}</span>
         <span>{`${wind} Wind`}</span>
     </div>
