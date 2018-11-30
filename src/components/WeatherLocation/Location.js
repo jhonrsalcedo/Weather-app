@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 const obj ={ name1: "Emanuel", name2: "Jose"} 
 //const {name1: myName1, name2: myName2} = obj; Destructuracion
@@ -9,7 +10,7 @@ console.log(name1, name2);
 pero se utiliza de esa manera para asegurar que todo salga bien ya sea con una sola linea de codigo
 () */ 
 const Location = ({city}) =>(
-    <div>
+    <div className="locationCont">
         <h1>{city}</h1>
     </div>
     );
