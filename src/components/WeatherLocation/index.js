@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Location from  './Location';
 import WeatherData from './WeatherData';
 import './styles.css';
@@ -13,13 +13,21 @@ const data ={
     humidity:10,
     wind: '10 m/s',
 }
-const WeatherLocation = () =>(
-    /* se le asigna un parametro a la etiqueta Location*/
-    <div className="weatherLocationCont">
-        <Location city={"Cartagena"}></Location>
-        
-        <WeatherData data={data}></WeatherData>
-    </div> // creamos el parametro data y lo igualamos a la const data para obtener los valores
-);
+class WeatherLocation extends Component {
+    render() { 
+        return(
+             /* se le asigna un parametro a la etiqueta Location*/
+ <div className="weatherLocationCont">
+ <Location city={"Cartagena"}></Location>
+ 
+ <WeatherData data={data}></WeatherData>
+</div> // creamos el parametro data y lo igualamos a la const data para obtener los valores
+        );
+
+
+    }
+
+}
+
 //cambio 
 export default WeatherLocation;
