@@ -22,6 +22,7 @@ const data2 ={
     wind: '15 m/s',
 }
 class WeatherLocation extends Component {
+    //se crea el constructuro de la clase y el super constructor hace referencia al Componet, se definen las etiquetas que se van a mostrar ya establecidas en el componente creado Location, WeatherData
     constructor(){
         super();
         this.state={
@@ -34,6 +35,7 @@ class WeatherLocation extends Component {
 //crear funcion flecha click, para acceder a metodos o funciones se utiliza this. 
     handleUpdatedClick = () =>{
         console.log("Actualizado")
+    //Para actulizar state dentro de una funcion se utiliza setState
         this.setState({
             city: "Barranquilla",
             data: data2,
