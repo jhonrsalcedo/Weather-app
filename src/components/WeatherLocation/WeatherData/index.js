@@ -7,7 +7,7 @@ import WeatherExtraInfo from './WeatherExtraInfo';
     SUN,
 } from './../../../constants/weathers'; */
 import './style.css';
-import { checkPropTypes } from 'prop-types';
+
 // WeatherData recibira datos pasados de Weather location doble destructuring
 //Nota: { } se pueden utulizar varias lineas de codigo y se debe retornar un valor se debe hacer explicitamente
 // ( ) se utiliza una linea de codigo
