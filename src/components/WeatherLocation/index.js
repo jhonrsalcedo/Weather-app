@@ -7,6 +7,12 @@ import {
     RAIN,
 }from '../../constants/weathers';
 
+const location = "Cartagnea,co";
+const api_key = "6cbff9b8b08365cfa0fdbc9b5345850e";
+const url_base_weather = "http://api.openweathermap.org/data/2.5/weather"
+
+const api_weather = `${url_base_weather}?q=${location}&appid=${api_key}`;
+
 //datos que seran pasados a WeatherData
 const data ={
     temperature: 5,
