@@ -40,7 +40,8 @@ class WeatherLocation extends Component {
 
 //crear funcion flecha click, para acceder a metodos o funciones se utiliza this. 
     handleUpdatedClick = () =>{
-        console.log("Actualizado")
+        fetch(api_weather);
+        //console.log("Actualizado")
     //Para actulizar state dentro de una funcion se utiliza setState
         this.setState({
             city: "Barranquilla",
